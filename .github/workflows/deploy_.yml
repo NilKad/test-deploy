@@ -21,6 +21,7 @@ jobs:
        with:
          branch: gh-pages
          folder: build
+         
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
       - run: echo "${{ secrets.hostinger }}" > "$HOME/.ssh/key"
